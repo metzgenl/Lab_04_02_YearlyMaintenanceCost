@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class YearlyMaintenanceCost {
     double springMaintenanceCost;
     double summerMaintenanceCost;
@@ -8,18 +6,12 @@ public class YearlyMaintenanceCost {
     double totalYearlyMaintenanceCost;
 
     public void getMaintenanceCost(){
-        //Create Scanner class
-        Scanner scn = new Scanner(System.in);
 
         //Get Maintenance Cost
-        System.out.print("What is the maintenance cost for the spring($): ");
-        springMaintenanceCost = scn.nextDouble();
-        System.out.print("What is the maintenance cost for the summer($): ");
-        summerMaintenanceCost = scn.nextDouble();
-        System.out.print("What is the maintenance cost for the fall($): ");
-        fallMaintenanceCost = scn.nextDouble();
-        System.out.print("What is the maintenance cost for the winter($): ");
-        winterMaintenanceCost = scn.nextDouble();
+        springMaintenanceCost = 100.00;
+        summerMaintenanceCost = 200.00;
+        fallMaintenanceCost = 300.00;
+        winterMaintenanceCost = 400.00;
 
         totalYearlyMaintenanceCost = springMaintenanceCost + summerMaintenanceCost + fallMaintenanceCost + winterMaintenanceCost;
 
